@@ -2,6 +2,8 @@
 
  int main(){
 
+
+ void addNumber();
    printf("This is a C program\n");
 
    int number;
@@ -10,11 +12,6 @@
    scanf("%d", &number);
    printf("you've entered %d", number);
 
-
-   for (int i = 0; i<number; i++){
-     printf(i);
-   }
-
-
+  return 0;
 
 }
