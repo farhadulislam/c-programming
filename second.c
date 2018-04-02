@@ -1,5 +1,6 @@
 
 #include<stdio.h>
+#define VALUE 23;
 
  int main(){
 
