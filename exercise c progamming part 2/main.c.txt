@@ -1,0 +1,97 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void printNum();
+void printArray();
+void showMemAddress(){
+
+char a = 'A', b = 'B';
+int  num1 = 10, num2 = 1001;
+
+printf("Value of a is %c \t", a);
+printf("Address of a is %p \n", &a);
+
+printf("Value of b is %c \t", b);
+printf("Address of b is %p \n", &b);
+
+printf("Value of num1 is %d \t", num1);
+printf("Address of num1 is %p \n", &num1);
+
+printf("Value of num2 is %d \t", num2);
+printf("Address of num2 is %p \n", &num2);
+
+
+}
+
+int main()
+{
+    printf("Hello world!\n");
+
+    //showMemAddress();
+
+    //printArray();
+    //showSizeOfOperator();
+    //showVarMemAddDemo1();
+    pointerDemo1();
+
+
+}
+
+void printNum(){
+    int num;
+    for( num =0; num<100; num ++){
+        printf("%d \n", num);
+
+    }
+
+
+}
+
+void printArray(){
+
+int ara [5] = {50, 60, 70, 80, 90};
+
+printf("Value of array : %d, %d,  %d, %d\n", ara[0], ara[1],ara[2],ara[3] );
+printf("Address of ara is : %p", &ara);
+printf("Address of ara[0] is : %p", &ara[0]);
+printf("Address of ara[1] is : %p", &ara[1]);
+printf("Address of ara[2] is : %p", &ara[2]);
+printf("Address of ara[3] is : %p", &ara[3]);
+
+}
+
+void showSizeOfOperator(){
+register num;
+char ch;
+double d_num;
+float f_num;
+
+printf("%lu\n", sizeof(int));
+printf("Size of int : %d\n", sizeof(num));
+printf("Size of char : %d\n", sizeof(ch));
+printf("Size of double : %d\n", sizeof(double));
+printf("Size of float : %d\n", sizeof(float));
+
+}
+
+
+void showVarMemAddDemo1(){
+
+    int x = 10;
+    printf("The value of x is %d \n",x);
+    printf("The address of x is %p \n",&x);
+
+}
+
+
+void pointerDemo1(){
+
+    int x = 23;
+    int *p;
+
+    p = &x;
+
+    printf("p = %d\n", *p);
+    printf("Value of p is  %p", p);
+
+}
