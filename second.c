@@ -7,7 +7,7 @@
    int calc();
 
    //int addNumber(int a , int b);
-   printf("This is a C program\n");
+   printf("This is a C mishkat\n");
 
    int number1;
    printf("Enter a number to add \n");
